@@ -286,11 +286,9 @@
   </style>
 </head>
 <body>
-
 <!-- HEADER -->
 <header id="header">
   <div class="nav-wrap">
-    
     <!-- لوګو برخه: عکس دلته ورکړئ -->
     <a href="#home" class="logo-container">
       <!-- ۱. دلته د خپل لوګو عکس لینک یا نوم واچوئ (د 'src' دننه) -->
@@ -301,7 +299,6 @@
         همدرد شفاء <span>سراپا کلینیک</span> <span> Hamdard shifa clinic </span>
       </div>
     </a>
-
     <ul class="nav-links">
       <li><a href="#home">کور</a></li>
       <li><a href="#services">خدمات</a></li>
@@ -313,7 +310,6 @@
     <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
   </div>
 </header>
-
 <!-- HERO SECTION -->
 <section class="hero" id="home">
   <div class="container">
@@ -327,11 +323,10 @@
           <a href="https://wa.me/93707380768" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> واټسپ پیغام</a>
         </div>
       </div>
-      
       <!-- ۲. د کلینک د بهرنۍ برخې یا عمومي عکس -->
       <div class="hero-image-box">
         <!-- دلته د خپل کلینک عکس واچوئ -->
-        <img src="images/clinic.jpg" alt="Logo">
+        <img src="clinic.jpg" alt="Logo">
         <div class="hero-badge">
           <i class="fa-solid fa-truck-medical"></i>
           <div class="hero-badge-text">
@@ -340,11 +335,9 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-
 <!-- SERVICES -->
 <section class="services" id="services">
   <div class="container">
@@ -397,7 +390,6 @@
 <section class="about" id="about">
   <div class="container">
     <div class="about-grid">
-      
       <!-- ۳. د کلینیک د خونو او داخلي برخو عکسونه -->
       <div class="about-gallery">
         <!-- لوی عکس (د بیلګې په توګه: د عملیات خانې یا لابراتوار عکس) -->
@@ -412,7 +404,6 @@
           <img src="images/Lab.jpg" alt="Lab">
         </div>
       </div>
-
       <div class="about-text">
         <span class="badge-top">زموږ په اړه</span>
         <h3>عصري وسایل او مسلکي ټیم په یو ځای کې</h3>
@@ -427,7 +418,6 @@
     </div>
   </div>
 </section>
-
 <!-- DOCTORS & PERSONNEL (نوې برخه د ډاکټرانو د عکسونو لپاره) -->
 <section class="team" id="team">
   <div class="container">
@@ -436,7 +426,6 @@
       <h2>زموږ مسلکي ډاکټران او پرسونل</h2>
       <p>مجرب، تکړه او خواخوږي ډاکټران چې ستاسو روغتیا ته ژمن دي</p>
     </div>
-    
     <div class="team-grid">
       <!-- ۴. د لومړي ډاکټر پروفایل (عکس او معلومات) -->
       <div class="team-card">
@@ -498,7 +487,6 @@
           <span>MD</span>
         </div>
       </div>
-      
       <!-- د څلورم ډاکټر / پرسونل پروفایل (که نور لری، دا برخه کاپي کړئ) -->
       <div class="team-card">
         <div class="team-img-box">
@@ -511,11 +499,9 @@
           <span>د دقیقو ازموینو او پایلو لپاره</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-
 <!-- CONTACT & FORM -->
 <section class="contact" id="contact">
   <div class="container">
@@ -548,7 +534,6 @@
           </div>
         </div>
       </div>
-      
       <div class="form-panel">
         <form id="waForm">
           <div class="form-row">
@@ -588,7 +573,6 @@
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="container">
@@ -625,13 +609,11 @@
     </div>
   </div>
 </footer>
-
 <script>
   // Header Scroll Effect
   window.addEventListener('scroll', () => {
     document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
   });
-
   // WhatsApp Form Submit Logic
   const WA_NUMBER = "93707380768";
   document.getElementById('waForm').addEventListener('submit', function(e) {
@@ -640,13 +622,11 @@
     const phone = document.getElementById('phone').value;
     const service = document.getElementById('service').value;
     const message = document.getElementById('message').value;
-
     const text = `سلام، زه غواړم کلینیک ته نوبت واخلم:%0A%0A` +
                  `👤 نوم: ${name}%0A` +
                  `📞 تلیفون: ${phone}%0A` +
                  `🏥 خدمت: ${service}%0A` +
                  `💬 پیغام: ${message}`;
-                 
     window.open(`https://wa.me/${WA_NUMBER}?text=${text}`, '_blank');
   });
 </script>
